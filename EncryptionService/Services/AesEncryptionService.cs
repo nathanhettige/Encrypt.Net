@@ -5,7 +5,7 @@ using EncryptionService.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace EncryptionService.EncryptionServices;
+namespace EncryptionService.Services;
 
 /// <summary>
 ///     Implements AES using a 256-bit key.
