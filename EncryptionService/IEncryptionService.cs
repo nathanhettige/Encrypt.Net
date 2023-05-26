@@ -9,7 +9,7 @@ public interface IEncryptionService
 	public string Encrypt<T>(T obj);
 
 	/// <summary>
-	///     Decrypts the ciphertext and deserializes to T
+	///     Decrypts the ciphertext and returns as T.
 	/// </summary>
 	/// <param name="cipher">Encoded ciphertext</param>
 	public T Decrypt<T>(string cipher);

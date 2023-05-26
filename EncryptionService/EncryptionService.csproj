@@ -4,6 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Encrypt.Net</PackageId>
+        <Title>Encrypt.Net</Title>
+        <Authors>Nathan Hettige</Authors>
+        <Description>Simple encrypt/decrypt functions for .NET.</Description>
+        <PackageProjectUrl>https://github.com/nathanhettige/Encrypt.Net</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nathanhettige/Encrypt.Net</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
