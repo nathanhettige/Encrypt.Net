@@ -5,5 +5,5 @@ namespace EncryptionService.Options;
 public class EncryptionOptions
 {
 	public const string Encryption = "Encryption";
-	[Required] public string Key { get; set; }
+	[Required] public string Key { get; set; } = string.Empty;
 }

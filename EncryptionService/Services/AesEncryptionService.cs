@@ -57,7 +57,7 @@ public class AesEncryptionService : IEncryptionService
 				return ciphertext;
 			}
 		}
-		catch (Exception e)
+		catch (Exception)
 		{
 			_logger.LogError("Encryption failed");
 			throw;
@@ -109,7 +109,7 @@ public class AesEncryptionService : IEncryptionService
 				}
 			}
 		}
-		catch (Exception e)
+		catch (Exception)
 		{
 			_logger.LogError("Decryption failed");
 			throw;

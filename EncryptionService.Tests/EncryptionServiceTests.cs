@@ -17,14 +17,10 @@ public class EncryptionServiceTests
 	{
 		// Arrange
 		var encryptionService = new AesEncryptionService(new OptionsWrapper<EncryptionOptions>(_encryptionOptions), NullLogger<AesEncryptionService>.Instance);
-		var obj = new Object
+		var obj = new Object("Field", new Dictionary<string, string>
 		{
-			Field = "Field",
-			Dictionary = new Dictionary<string, string>
-			{
-				{ "Question", "Answer" }
-			}
-		};
+			{ "Question", "Answer" }
+		});
 
 		// Act
 		var encryptedData = encryptionService.Encrypt(obj);
@@ -39,6 +35,11 @@ public class EncryptionServiceTests
 
 public class Object
 {
-	public string Field { get; set; }
-	public Dictionary<string, string> Dictionary { get; set; }
+	public Object(string field, Dictionary<string, string> dictionary)
+	{
+		Field = field;
+		Dictionary = dictionary;
+	}
+	public string Field { get; init; }
+	public Dictionary<string, string> Dictionary { get; init; }
 }
